@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinabh Thakur | Electronics & AI Engineer</title>
+    <meta name="description"
+        content="Portfolio of Avinabh Thakur - Electronics Engineer and Researcher based in Dhulikhel, Nepal.">
+    <!-- Google Fonts for Apple/OpenAI typography aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Phosphor Icons for minimalist social media icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <!-- Space Particle Canvas Background -->
+    <canvas id="space-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="profile.jpg" alt="Avinabh Thakur" class="nav-profile-pic"
+                onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><circle cx=\'50\' cy=\'50\' r=\'50\' fill=\'%23111\'/><text x=\'50\' y=\'50\' font-size=\'35\' fill=\'%23555\' text-anchor=\'middle\' dy=\'.3em\' font-family=\'sans-serif\'>AT</text></svg>'">
+            Avinabh Thakur
+        </div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <!-- Added Download CV Button -->
+            <a href="Avinabh CV.pdf" class="btn btn-primary btn-sm" download
+                style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                <i class="ph ph-download-simple" style="font-size: 1.1rem; color: #000000;"></i>
+                <span style="color: #000000; font-weight: 600;">Download CV</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero container reveal">
+        <h1>Avinabh Thakur</h1>
+        <p class="subtitle" id="typing-container" style="min-height: 80px;">
+            <span id="typing-text"></span><span class="blinking-cursor">_</span>
+        </p>
+        <div>
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <a href="#projects" class="btn btn-secondary">View Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2 class="reveal">About & Interests</h2>
+        <div class="reveal">
+            <p>I am an Electrical and Electronics Engineering undergraduate at Kathmandu University, passionate about
+                microelectronics, VLSI, robotics, and applied AI. As a Research Assistant at HATRIC Labs (Nepal
+                Technology Innovation Center), I design and validate complex control systems and medical devices.</p>
+        </div>
+
+        <h3 class="reveal" style="margin-top: 2rem; margin-bottom: 1rem;">Interests</h3>
+        <div class="skills-container reveal">
+            <span class="skill-badge">Electronics & Electrical Systems</span>
+            <span class="skill-badge">Embedded Systems & Firmware</span>
+            <span class="skill-badge">VLSI & Microelectronics</span>
+            <span class="skill-badge">Analog & Digital Hardware Design</span>
+            <span class="skill-badge">Computer Architecture</span>
+            <span class="skill-badge">Hardware-Software Co-designs</span>
+            <span class="skill-badge">Signal Processing Algorithms</span>
+            <span class="skill-badge">RF Hardware Design</span>
+            <span class="skill-badge">Robotics & Control Systems</span>
+            <span class="skill-badge">Applied Programming for Hardware</span>
+            <span class="skill-badge">Artificial Intelligence & Embodied AI</span>
+            <span class="skill-badge">Reinforcement Learning</span>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <h2 class="reveal">Technical Expertise</h2>
+        <div class="grid reveal">
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Analog & Digital Electronics</h3>
+                <p>Deep expertise in analog & digital electronics, CMOS circuits, signals & systems, EM fundamentals,
+                    noise, timing, power, and signal integrity.</p>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Computer Architecture</h3>
+                <p>Instruction sets, pipelining, caches, memory hierarchy, interrupts, DMA, I/O subsystems, performance
+                    optimization, Control and System design.</p>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>VLSI & Semiconductor</h3>
+                <p>RTL-to-GDS flow, Verilog/SystemVerilog, timing & power analysis, physical design fundamentals, SPICE
+                    simulation, device physics, IC fabrication process.</p>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Analog & Mixed-Signal</h3>
+                <p>Op-amp architectures, ADC/DAC design, PLLs, clocking systems, stability, mismatch, and noise
+                    analysis.</p>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Embedded Systems & IoT</h3>
+                <p>C/C++, Python, ROS, Linux, RTOS concepts, Microcontrollers, edge computing, wired/wireless
+                    communication, protocol integration.</p>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Simulation & EDA</h3>
+                <p>MATLAB/Simulink, Python (NumPy/SciPy), SPICE, KiCad, Proteus, Cadence/Synopsys toolchains.</p>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>RF & Microwave</h3>
+                <p>Transmission lines, impedance matching, S-parameters, RF front-end basics, antenna design.</p>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Sensors & Instrumentation</h3>
+                <p>Design, modeling, interfacing, calibration, signal conditioning, prototyping of custom and novel
+                    sensors, MEMS.</p>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Digital Signal Processing</h3>
+                <p>RISC architecture, advanced digital filtering techniques, signal conditioning, algorithm
+                    implementation, and digital control systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Employment & Education & Entre) -->
+    <section id="experience" class="container">
+        <h2 class="reveal">Employment History</h2>
+        <div class="experience-grid reveal">
+            <div class="experience-item card-link" onclick="window.location.href='javascript:void(0)'">
+                <div class="experience-date">2025 — Present</div>
+                <h3>Research Assistant – Engineer</h3>
+                <p><strong>HATRIC Labs, Nepal Technology Innovation Center, Kathmandu University</strong></p>
+                <ul>
+                    <li>Defined electrical and safety requirements for a TENS system, including stimulation frequency
+                        range and biological tissue isolation.</li>
+                    <li>Built an H-bridge output stage using MOSFETs switched via NPN BJTs to generate asymmetric
+                        biphasic stimulation.</li>
+                    <li>Integrated a passive RC low-pass filter to smooth PWM waveforms, reduce switching noise, and
+                        obtain stable low-frequency signals.</li>
+                    <li>Tested and validated the system using oscilloscope measurements, tuning components for safe
+                        operation.</li>
+                    <li>Documented complete circuit design and contributed to patent documentation with block diagrams
+                        and technical descriptions.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="reveal" style="margin-top: 4rem;">Entrepreneurship</h2>
+        <div class="experience-grid reveal">
+            <div class="experience-item card-link" onclick="window.location.href='javascript:void(0)'">
+                <div class="experience-date">2021 — 2023</div>
+                <h3>Co-founder</h3>
+                <p><strong>PrepOp (Kathmandu, Nepal)</strong></p>
+                <ul>
+                    <li>Created a platform for teachers and students to buy and sell courses, tailored for Nepal's
+                        internet infrastructure.</li>
+                    <li>Pitched to Multiple Investors and Educational institutions and demonstrated to teachers and
+                        students.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="reveal" style="margin-top: 4rem;">Education</h2>
+        <div class="experience-grid reveal">
+            <div class="experience-item card-link" onclick="window.location.href='javascript:void(0)'">
+                <div class="experience-date">Expected 2027</div>
+                <h3>Bachelor of Engineering, Electrical and Electronics Engineering</h3>
+                <p><strong>Kathmandu University, Dhulikhel, Nepal</strong></p>
+                <p class="small">Computer Programming, Engineering Drawing, Advanced Physics, Chemistry, Engineering
+                    Management, Engineering Economics Digital Logic, Advanced Calculus, Diff. Equations, Probability &
+                    Stat, Electronics I & II, Network Analysis, Signals & Systems, Electrical Machinery,
+                    Microprocessors, Electromagnetics, Communication Systems, Measurement & Instrumentation, DSP,
+                    Biomedical Engineering.</p>
+            </div>
+            <div class="experience-item card-link" onclick="window.location.href='javascript:void(0)'">
+                <div class="experience-date">2019 — 2021</div>
+                <h3>High Schooling (Science)</h3>
+                <p><strong>Capital College and Research Center, Koteshwor, Kathmandu</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h2 class="reveal">Engineering Projects</h2>
+        <div class="grid reveal">
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>MediBot</h3>
+                <h4>Harvard Health Hackathon</h4>
+                <p>An AI-driven robotic system for autonomous wound stitching integrating multimodal sensor fusion,
+                    custom neural networks for path planning, and an IoT monitoring layer for real-time remote
+                    supervision.</p>
+                <div><span class="tag">AI</span><span class="tag">Robotics</span></div>
+            </div>
+
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Bionic Arm Using Flex Sensors</h3>
+                <h4>KURC Hackathon</h4>
+                <p>Developed a Bionic Arm enabling prosthetic hand movements controlled by user finger bending.</p>
+                <div><span class="tag">Embedded Systems</span><span class="tag">Prosthetics</span></div>
+            </div>
+
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Noise-Canceling Algorithm</h3>
+                <h4>3rd year project</h4>
+                <p>Designed and Implemented a Noise-Canceling Algorithm on FPGA, reducing unwanted signals and
+                    demonstrating hardware-level signal processing.</p>
+                <div><span class="tag">FPGA</span><span class="tag">DSP</span></div>
+            </div>
+
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Self-Driving Algorithm</h3>
+                <h4>Group Project</h4>
+                <p>Created Computer Vision to detect lanes and obstacles, enabling autonomous navigation in a prototype
+                    vehicle implemented into a GPS based Delivery System.</p>
+                <div><span class="tag">Computer Vision</span><span class="tag">Autonomous</span></div>
+            </div>
+
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Air Canvas Using Mediapipe</h3>
+                <h4>Hobby project</h4>
+                <p>Implemented an Air Canvas in Python, allowing users to draw in the air through real-time hand gesture
+                    recognition.</p>
+                <div><span class="tag">Python</span><span class="tag">Computer Vision</span></div>
+            </div>
+
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>TOD Based Energy Meter</h3>
+                <h4>Power System Mini Project</h4>
+                <p>Constructed an Energy Meter measuring energy consumption with variable rates based on the time of
+                    day.</p>
+                <div><span class="tag">Power Systems</span><span class="tag">Hardware</span></div>
+            </div>
+
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>RC Glider</h3>
+                <h4>Clubs Joint Project</h4>
+                <p>Built an RC Glider Using Flysky Six Channel T&R, demonstrating control systems and aerodynamics in a
+                    remote-controlled aircraft.</p>
+                <div><span class="tag">Aerodynamics</span><span class="tag">Control Systems</span></div>
+            </div>
+
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Binary Calculator</h3>
+                <h4>1st year Project</h4>
+                <p>Designed a Logic IC Based Binary Calculator performing binary arithmetic operations using
+                    combinational logic circuits.</p>
+                <div><span class="tag">Digital Logic</span><span class="tag">IC</span></div>
+            </div>
+
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Binary Logic Components</h3>
+                <h4>Hobby project</h4>
+                <p>Fabricated Binary Logic gates, counters, flipflops and oscillators using basic electronics
+                    components.</p>
+                <div><span class="tag">Electronics</span></div>
+            </div>
+
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>4 Channel T&R</h3>
+                <h4>2nd year project</h4>
+                <p>Studied and Designed 4 channel transmitter and receiver using RF signals.</p>
+                <div><span class="tag">RF Signals</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications, Books, Patents -->
+    <section id="publications" class="container">
+        <h2 class="reveal">Publications & Intellectual Property</h2>
+
+        <h3 class="reveal" style="margin-bottom: 1rem;">Patents</h3>
+        <div class="experience-grid reveal" style="margin-top:0;">
+            <div class="experience-item card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>TENS Machine</h3>
+                <p>Applied For National Patent through HATRIC Lab.</p>
+            </div>
+        </div>
+
+        <h3 class="reveal" style="margin-top: 3rem; margin-bottom: 1rem;">Books</h3>
+        <div class="experience-grid reveal" style="margin-top:0;">
+            <div class="experience-item card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Between 0 and 1</h3>
+                <p>Authoring a book that explains how electronics are created from raw sand to silicon, detailing the
+                    journey from basic components to fully functional electronics to modern control and thinking
+                    Machines.</p>
+            </div>
+        </div>
+
+        <h3 class="reveal" style="margin-top: 3rem; margin-bottom: 1rem;">Research Paper and Thesis</h3>
+        <div class="experience-grid reveal" style="margin-top:0;">
+            <div class="experience-item card-link" style="cursor: pointer;"
+                onclick="window.location.href='javascript:void(0)'">
+                <h3>Low-Power, High-Speed Digital Computation</h3>
+                <p>A Modified Multiplier Approach for Optimizing Arithmetic and Logic Operations.</p>
+            </div>
+            <div class="experience-item card-link" style="cursor: pointer;"
+                onclick="window.location.href='javascript:void(0)'">
+                <h3>AI-Driven Deforestation Monitoring</h3>
+                <p>A Multi-Modal Deep Learning Approach using Satellite Imagery and Reinforcement Learning.</p>
+            </div>
+            <div class="experience-item card-link" style="cursor: pointer;"
+                onclick="window.location.href='javascript:void(0)'">
+                <h3>Beyond Line-of-Sight</h3>
+                <p>An Interconnected V2X Prototype for Multi-Agent Semantic Awareness and Advanced Collision Avoidance
+                    and FSD.</p>
+            </div>
+            <div class="experience-item card-link" style="cursor: pointer;"
+                onclick="window.location.href='javascript:void(0)'">
+                <h3>Smart IOT based TOD meter</h3>
+                <p>Advanced Time-of-Day energy metering system incorporating IoT capabilities for real-time monitoring
+                    and dynamic pricing analysis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Community -->
+    <section id="leadership" class="container">
+        <h2 class="reveal">Clubs, Organizations & Community Services</h2>
+
+        <div class="grid reveal" style="margin-bottom: 3rem;">
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>IEEE Electron Device Society - KU Chapter</h3>
+                <h4>Chairman - Undergraduate (2026-present)</h4>
+                <ul>
+                    <li>Conducted Research paper writing workshops.</li>
+                    <li>Launched Magazine.</li>
+                    <li>Organized events to connect research with industry.</li>
+                </ul>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Engineers Without Borders - KU chapter</h3>
+                <h4>Executive Member (2025-Present)</h4>
+                <ul>
+                    <li>Designed website.</li>
+                    <li>Partnered in Projects.</li>
+                </ul>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Team UDAAN - Sounding Rocket</h3>
+                <h4>Avionics Researcher (2024-2025)</h4>
+                <ul>
+                    <li>Designed on board Data acquisition system.</li>
+                    <li>Real time Communication to ground station using LoRA.</li>
+                    <li>Signal conditioning and arrangement.</li>
+                </ul>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>SEEE</h3>
+                <h4>Documentation Lead (2022-Present)</h4>
+                <p>Organized workshops on using Engineering tools with 58 paid participants. Documented Events.</p>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Kathmandu University Robotics Club</h3>
+                <h4>General Member (2022-Present)</h4>
+                <p>Volunteered for the Aquabot event (Aavishkar 22).</p>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Computer Science Initiatives in Nepal</h3>
+                <h4>Mentor (2020-2022)</h4>
+                <p>Mentored members. Delivered a keynote talk on designing technology for older adults (200+ listeners).
+                </p>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>CCRC Tech/IT Club</h3>
+                <h4>Vice President (2019-2021)</h4>
+                <p>Hosted science exhibitions and participated in the LOCUS event at IOE.</p>
+            </div>
+        </div>
+
+        <h3 class="reveal" style="margin-top: 2rem; margin-bottom: 1rem;">Community Services & Professional Activities
+        </h3>
+        <div class="experience-grid reveal" style="margin-top: 0;">
+            <div class="experience-item card-link" onclick="window.location.href='javascript:void(0)'">
+                <div class="experience-date">2020 - 2025</div>
+                <ul>
+                    <li>Signed petitions and supported initiatives against corruption and for Gen Z empowerment (2025).
+                    </li>
+                    <li>Initiated campaigns around public health, environmental cleanliness, and waste management
+                        (2023).</li>
+                    <li>Hosted workshops for traditional Nepali arts like pottery, painting, wood carving (2022).</li>
+                    <li>Conducted organized clean-up campaigns for rivers and streams (2020).</li>
+                    <li>Taught older adults how to use smartphones and the internet (2020).</li>
+                    <li>Trained high school students on basic electronic components and interactive Arduino programming.
+                    </li>
+                    <li>Conducted Documentation, Presentation and Pitching training to juniors.</li>
+                    <li>Conducted training and workshops on KiCad and Proteus simulation with 124 participants.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards" class="container">
+        <h2 class="reveal">Awards and Achievements</h2>
+        <div class="grid reveal">
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Best Project for EEPX exhibition</h3>
+                <h4>1st Position (2024)</h4>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>Aavishkar'23 Hackathon "Innovation Nexus"</h3>
+                <h4>2nd Runner up (2023)</h4>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>National Informatics Olympiad</h3>
+                <h4>Bronze Medal (2022)</h4>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>IYMC Bangladesh</h3>
+                <h4>World Rank 7th (2022)</h4>
+            </div>
+            <div class="card card-link" onclick="window.location.href='javascript:void(0)'">
+                <h3>State Level Cricket, Janakpur</h3>
+                <h4>Man of the Match (2020)</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Direct Messaging -->
+    <section id="contact" class="container">
+        <h2 class="reveal" style="text-align: center;">Contact</h2>
+        <p class="reveal" style="text-align: center; margin: 0 auto 3rem auto;">Have a question or want to collaborate?
+            Send me a direct message.</p>
+
+        <div class="contact-grid reveal">
+            <!-- Left Side: Profile & Links -->
+            <div class="direct-contact">
+                <img src="profile.jpg" alt="Avinabh Thakur" class="profile-pic"
+                    onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><circle cx=\'50\' cy=\'50\' r=\'50\' fill=\'%23111\'/><text x=\'50\' y=\'50\' font-size=\'35\' fill=\'%23555\' text-anchor=\'middle\' dy=\'.3em\' font-family=\'sans-serif\'>AT</text></svg>'">
+
+                <h3>Avinabh Thakur</h3>
+                <p style="margin-bottom: 0.5rem;"><a href="mailto:avinabh10001@gmail.com"
+                        style="color: var(--text-primary); font-weight: 500;">avinabh10001@gmail.com</a></p>
+                <p style="font-family: var(--font-mono); font-size: 0.95rem; color: var(--text-secondary);">+977
+                    9842412929
+                    &nbsp;|&nbsp; Dhulikhel, Kavre, Nepal</p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/avinabh-thakur-0000h" aria-label="LinkedIn" title="LinkedIn"
+                        target="_blank"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="https://github.com/codexter07/codexter07" aria-label="GitHub" title="GitHub"
+                        target="_blank"><i class="ph ph-github-logo"></i></a>
+                    <a href="https://x.com/AvinabhT" aria-label="X (Twitter)" title="X (Twitter)" target="_blank"><i
+                            class="ph ph-x-logo"></i></a>
+                    <a href="https://www.facebook.com/share/1GhEQdNcNu/" aria-label="Facebook" title="Facebook"
+                        target="_blank"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="https://www.instagram.com/thakur_et.al?igsh=MTNhMjg1cmx0cDN1cw==" aria-label="Instagram"
+                        title="Instagram" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="https://wa.me/qr/NBUVWL2JQBMIH1" aria-label="WhatsApp" title="WhatsApp" target="_blank"><i
+                            class="ph ph-whatsapp-logo"></i></a>
+                    <a href="https://youtube.com/@avinabhthakur?si=L7bWYnzKwGtEZcLE" aria-label="YouTube"
+                        title="YouTube" target="_blank"><i class="ph ph-youtube-logo"></i></a>
+                    <a href="https://www.tiktok.com/@avinabh.thakur?_r=1&_t=ZS-94ZfGeV6wFt" aria-label="TikTok"
+                        title="TikTok" target="_blank"><i class="ph ph-tiktok-logo"></i></a>
+                    <a href="https://www.snapchat.com/add/avinabh143?share_id=oQXMozUPweM&locale=en-GB"
+                        aria-label="Snapchat" title="Snapchat" target="_blank"><i class="ph ph-snapchat-logo"></i></a>
+                    <a href="https://t.me/T_Avinabh" aria-label="Telegram" title="Telegram" target="_blank"><i
+                            class="ph ph-telegram-logo"></i></a>
+                </div>
+
+                <div class="hire-btn-container">
+                    <a href="https://www.fiverr.com/avinabh07/buying?source=avatar_menu_profile" target="_blank"
+                        class="btn btn-primary"
+                        style="padding-left: 2rem; padding-right: 2rem; display: inline-flex; align-items: center; gap: 0.5rem; width: 100%; justify-content: center;">
+                        <i class="ph ph-briefcase"></i> Hire Me for Freelance
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side: Messaging Form -->
+            <div class="contact-wrapper">
+                <div class="chat-box">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" required
+                                placeholder="Hello Avinabh, I'd like to discuss..."></textarea>
+                        </div>
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-send">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                            Send Message
+                        </button>
+                        <div id="form-message" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Avinabh Thakur. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
